@@ -1,59 +1,54 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="text-center">
       <img _ngcontent-hsp-c3="" alt="" src="/assets/icon/LOGONINESSELAS2.png" style="width: 35%; padding: 10px 2px 2px;">
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<div class="row row-search">
+  <div class="col">
+      <ion-searchbar placeholder="Busqueda" showCancelButton="focus"></ion-searchbar>
+  </div>
+</div>
+
 <ion-content class="nine-main">
     <ion-card class="welcome-card">
       <img src="/assets/slider05-min.jpg" alt="" />
-      <ion-card-header>
-        <ion-card-subtitle>Bienvenido</ion-card-subtitle>
-        <ion-card-title>AGENCIA DE ACTORES Y FIGURACIÓN</ion-card-title>
+      <ion-card-header class="card-text">
+        <ion-card-subtitle class="text-light">Bienvenido</ion-card-subtitle>
+        <ion-card-title class="text-light">AGENCIA DE ACTORES Y FIGURACIÓN</ion-card-title>
       </ion-card-header>
-      <ion-card-content>
-        <p>Queremos contar con tu perfil para futuros proyectos del mundo escénico.</p>
-        <h6>APORTA TUS DATOS Y RECUERDA ACTUALIZARTE.</h6>
+      <ion-card-content class="card-boton">
+        <div class="row-cad row">
+          <div class="col base01">
+              <ion-item color="primary" href="https://ionicframework.com/docs/">
+                  <ion-label>
+                    Figuración
+                    <p>Artes figurativas para obras teatral o cinematográfica</p>
+                  </ion-label>
+                  <ion-badge color="light">99</ion-badge>
+              </ion-item>
+          </div>
+          <div class="col base01">
+            <ion-item color="primary" href="https://ionicframework.com/docs/">
+                <ion-label>
+                  Actor
+                  <p>Interprete de un personaje de ciencia ficticio ya sea en el cine, en la radio o en la televisión</p>
+                </ion-label>
+                <ion-badge color="light">45</ion-badge>
+            </ion-item>
+          </div>
+          <div class="col base01">
+            <ion-item color="primary" href="https://ionicframework.com/docs/">
+                <ion-label>
+                  Niños
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </ion-label>
+                <ion-badge color="light">75</ion-badge>
+            </ion-item>
+          </div>
+        </div>
       </ion-card-content>
     </ion-card>
-    <ion-list class="text-center" lines="none">
-      <ion-list-header>
-        <ion-label>
-          Resources
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-        </ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>
-          Figuración
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-        </ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>
-          Actor
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-        </ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>
-          Niños
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-    <div class="row">
-      <div class="col">
-          <ion-item color="secondary">
-              <ion-label>
-                Facebook
-              </ion-label>
-          </ion-item>
-      </div>
-    </div>
 </ion-content>
