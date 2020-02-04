@@ -1,9 +1,31 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content></ion-content>
+<ion-content class="login">
+  <div class="contenid-login">
+    <!-- Input with placeholder -->
+    <img class="center-logo" src="/assets/icon/LOGONINESSELAS2.png" alt="Logo" style="width: 70%;">
+    <h5 class="pt-5 pb-3 text-center fs-27">Bienvenido a tu APP</h5>
+    <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    <!-- Boton Ingresar -->
+    <ion-button class="btn-send" color="primary">Ingresar</ion-button>
+    <div class="or pt-4">
+        <h6 class="pb-3 text-center">Tambien Ingresas con</h6>
+        <div class="row icon-login">
+          <div class="col-1"><ion-icon class="icon" name="logo-facebook"></ion-icon></div>
+          <div class="col-1"><ion-icon class="icon" name="logo-google"></ion-icon></div>
+        </div>
+    </div>
+  </div>
+</ion-content>

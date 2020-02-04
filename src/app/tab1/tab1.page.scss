@@ -15,6 +15,34 @@
         }
       }
     }
+    .card-redes{
+      .col-redes{
+        .bg-facebook{
+          padding: 20px 20px 20px 20px;
+          background-color: #3b5998;
+          .icon{
+            color: white;
+            font-size: 30px;
+          }
+        }
+        .bg-instagram{
+          padding: 20px 20px 20px 20px;
+          background-image: url(/assets/img/bg-instagram.jpg);
+          .icon{
+            color: white;
+            font-size: 30px;
+          }
+        }
+        .bg-youtube{
+          padding: 20px 20px 20px 20px;
+          background-color: #c4302b;
+          .icon{
+            color: white;
+            font-size: 30px;
+          }
+        }
+      }
+    }
     .card-text{
       position: absolute;
       z-index: 999;
@@ -26,8 +54,4 @@
       font-size: 13px;
     }
   }
-}
-
-.my-custom-menu {
-  --width: 500px;
 }
