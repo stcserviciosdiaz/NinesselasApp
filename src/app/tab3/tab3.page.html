@@ -1,9 +1,43 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Empresas
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <form  #form="ngForm" (ngSubmit)="register(form)">
+      <ion-grid>
+        <ion-row justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div class="center-logo">
+              <img class="center-logo" src="/assets/icon/LOGONINESSELAS2.png" alt="Logo" style="width: 70%;">
+              <h3>Create tu usuario!</h3>
+            </div>
+            <div padding>
+              <ion-item>
+                  <ion-label position="floating">Usuario</ion-label>
+                  <ion-input  name="name" type="text" required></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating">Email</ion-label>
+                  <ion-input name="email" type="email" required></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating">Contraseña</ion-label>
+                  <ion-input name="confirm" type="password" required></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating">Confirma contraseña</ion-label>
+                  <ion-input name="confirm" type="password" required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="block">Register</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </ion-content>
