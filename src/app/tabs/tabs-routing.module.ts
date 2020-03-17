@@ -8,16 +8,6 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'home',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../home/home.module').then(m => m.HomePageModule)
-          }
-        ]
-      },
-      {
         path: 'login',
         children: [
           {
@@ -38,6 +28,27 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'admin',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../admin/admin.module').then(m => m.AdminPageModule)
+          }
+        ]
+      },
+      {
+        path: 'home',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../home/home.module').then(m => m.HomePageModule)
+          }
+        ]
+      },
+      
+      {
         path: 'listFigurante',
         children: [
           {
@@ -49,14 +60,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/home',
+        redirectTo: '/tabs/login',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/home',
+    redirectTo: '/tabs/login',
     pathMatch: 'full'
   }
 ];

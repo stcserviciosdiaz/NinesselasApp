@@ -12,38 +12,62 @@
       <ion-card-header class="card-text">
         <ion-card-subtitle class="text-light">Bienvenido</ion-card-subtitle>
         <ion-card-title class="text-light">AGENCIA DE ACTORES Y FIGURACIÓN</ion-card-title>
-      </ion-card-header>
-      <ion-card-content class="card-boton">
-        <div class="row-cad row">
-          <div class="col base01" >
-              <ion-item color="primary" [routerLink]="listFigurante" routerDirection="forward">
-                  <ion-label>
-                    Figuración
-                    <p>Artes figurativas para obras teatral o cinematográfica</p>
-                  </ion-label>
-                  <ion-badge color="light">99</ion-badge>
-              </ion-item>
-          </div>
-          <div class="col base01">
-            <ion-item color="primary">
-                <ion-label>
-                  Actor
-                  <p>Interprete de un personaje de ciencia ficticio ya sea en el cine, en la radio o en la televisión</p>
-                </ion-label>
-                <ion-badge color="light">45</ion-badge>
+      </ion-card-header>      
+      <ion-card>
+        <ion-card-content>
+          <ion-card-header>
+            <ion-card-subtitle>Usuarios figurativos</ion-card-subtitle>
+            <ion-card-title>Figuración</ion-card-title>
+          </ion-card-header>
+          <p>
+            Artes figurativas para obras teatral o cinematográfica
+          </p>
+          <ion-item>
+            <ion-button fill="solid">Ver mas ..</ion-button>
+            <ion-icon name="heart" slot="end"></ion-icon>
+            <ion-icon name="share" slot="end"></ion-icon>
+            <ion-badge color="light" slot="end">75</ion-badge>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+          <ion-card-content>
+            <ion-card-header>
+              <ion-card-subtitle>Usuarios Actores</ion-card-subtitle>
+              <ion-card-title>Actor</ion-card-title>
+            </ion-card-header>
+            <p>
+                Interprete de un personaje de ciencia ficticio ya sea en el cine, en la radio o en la televisión
+            </p>
+            <ion-item>
+              <ion-button fill="solid">Ver mas..</ion-button>
+              <ion-icon name="heart" slot="end"></ion-icon>
+              <ion-icon name="share" slot="end"></ion-icon>
+              <ion-badge color="light" slot="end">30</ion-badge>
             </ion-item>
-          </div>
-          <div class="col base01">
-            <ion-item color="primary">
-                <ion-label>
-                  Niños
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                </ion-label>
-                <ion-badge color="light">75</ion-badge>
+          </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+          <ion-card-content>
+            <ion-card-header>
+              <ion-card-subtitle>Usuarios niños</ion-card-subtitle>
+              <ion-card-title>Niños</ion-card-title>
+            </ion-card-header>
+            <p>
+              Niños jovenes preparados para ciencia ficticio ya sea en el cine, en la radio o en la televisión
+            </p>
+            <ion-item>
+              <ion-button fill="solid">Ver mas..</ion-button>
+              <ion-icon name="heart" slot="end"></ion-icon>
+              <ion-icon name="share" slot="end"></ion-icon>
+              <ion-badge color="light" slot="end">28</ion-badge>
             </ion-item>
-          </div>
-        </div>
-      </ion-card-content>
+          </ion-card-content>
+      </ion-card>
+
+
       <div class="row text-center card-redes">
         <div class="col col-redes">
           <div class="bg-facebook">
