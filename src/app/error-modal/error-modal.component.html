@@ -1,3 +1,8 @@
-<p>
-  Direccion de email desconocida. Vuelva a verificar o pruebe su nombre de usuario.
-</p>
+<ngx-smart-modal #videoModal identifier = "videoModal" customClass = "medium-modal">
+  <h1> ¡Hola, te he enrollado! </h1>
+  <iframe #rickroll width = "1280" height = "720"
+          src = "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=1&controls=0&showinfo=0&ecver=1&enablejsapi=1"
+          frameborder = "0" allowfullscreen> </iframe>
+
+  <button class = "button -dark" (click) = "videoModal.close ()"> Cerrar </button>
+</ngx-smart-modal>

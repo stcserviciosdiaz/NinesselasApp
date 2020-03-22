@@ -23,7 +23,6 @@ export class AuthService {
         return await this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
       } catch (error){
         console.log('error on login', error);
-        this.ngxSmartModalService.create('SuccessModal', ErrorModalComponent).open();
       }
     }
 

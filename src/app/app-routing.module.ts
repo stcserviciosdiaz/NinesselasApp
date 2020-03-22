@@ -5,7 +5,7 @@ import { HomePageModule } from './home/home.module';
 import { LoginPageModule } from './login/login.module';
 import { RegisterPageModule } from './register/register.module';
 import { AdminPageModule } from './admin/admin.module';
-//import { AuthGuard } from './guards/auth.guard';
+import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   {
@@ -27,12 +27,12 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule),
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path: 'admin',
     loadChildren: () => import('./admin/admin.module').then(m => m.AdminPageModule),
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
 ];
 

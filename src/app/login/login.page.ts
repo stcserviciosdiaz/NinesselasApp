@@ -24,9 +24,10 @@ export class LoginPage {
 
     const user = await this.authSvc.onLogin(this.user);
     if(user){
-      this.ngxSmartModalService.create('SuccessModal', SuccessModalComponent).open();
       this.router.navigateByUrl('/home');
     }
-
   }
+
+  
+
 }

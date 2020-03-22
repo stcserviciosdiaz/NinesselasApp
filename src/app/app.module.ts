@@ -33,6 +33,7 @@ import { NgxSmartModalService, NgxSmartModalModule } from 'ngx-smart-modal';
     BrowserAnimationsModule,
     MatSliderModule,
     MatDialogModule,
+    //NgxSmartModalService,
     NgxSmartModalModule.forRoot()
   ],
   //NgbModule.forRoot()],
