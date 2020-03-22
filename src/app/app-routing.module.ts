@@ -14,7 +14,8 @@ const routes: Routes = [
   },
   {
     path: 'listFigurante',
-    loadChildren: () => import('./listFigurante/listFigurante.module').then(m => m.ListFigurantePageModule)
+    loadChildren: () => import('./listFigurante/listFigurante.module').then(m => m.ListFigurantePageModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'login',

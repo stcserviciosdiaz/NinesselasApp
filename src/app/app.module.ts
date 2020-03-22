@@ -22,12 +22,15 @@ import {MatDialogModule} from '@angular/material/dialog';
 // Angular Plugins
 import { NgxSmartModalService, NgxSmartModalModule } from 'ngx-smart-modal';
 
+// Http
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), 
     AppRoutingModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     BrowserAnimationsModule,
