@@ -1,4 +1,10 @@
 .center-logo{
+    img {
+        max-height: 40%;
+        max-width: 100%;
+        margin: 0px 0 15px;
+        pointer-events: none;
+    }
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -23,7 +23,6 @@ export class LoginPage {
   ngOnInit(){}
 
   async onLogin() {
-
     const user = await this.authSvc.onLogin(this.user);
     if(user){
       this.presentAlert()

@@ -6,6 +6,7 @@ import { LoginPageModule } from './login/login.module';
 import { RegisterPageModule } from './register/register.module';
 import { AdminPageModule } from './admin/admin.module';
 import { AuthGuard } from './guard/auth.guard';
+import { WelcomePageModule } from './welcome/welcome.module';
 
 const routes: Routes = [
   {
@@ -35,11 +36,16 @@ const routes: Routes = [
     loadChildren: () => import('./admin/admin.module').then(m => m.AdminPageModule),
     canActivate: [AuthGuard]
   },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),    
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    WelcomePageModule,
     LoginPageModule,
     RegisterPageModule,
     AdminPageModule,
