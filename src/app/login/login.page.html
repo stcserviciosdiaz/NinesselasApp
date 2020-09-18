@@ -5,11 +5,13 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content class="login">
+<ion-content fullscreen class="ion-padding login">
   <div class="contenid-login">
     <!-- Input with placeholder -->
-    <img src="../../assets/img/Vector Smart Object.png"/>
-    <h3>Ingresar!</h3>
+    <div class="text-center">
+      <img class="mx-auto d-block" src="../../assets/img/Vector Smart Object.png"/>
+      <h3 class="pt-4">Ingresar!</h3>
+    </div>
     <ion-item>
         <ion-label position="floating" >Email</ion-label>
         <ion-input type="email" [(ngModel)]="user.email"></ion-input>
@@ -23,7 +25,7 @@
     <ion-button class="btn-send" color="primary" routerLink="/register">Registrate</ion-button>
     <div class="or pt-4">
         <h6 class="pb-3 text-center">Tambien Ingresas con</h6>
-        <div class="row icon-login">
+        <div class="text-center row icon-login">
           <div class="col-1"><ion-icon class="icon" name="logo-facebook"></ion-icon></div>
           <div class="col-1"><ion-icon class="icon" name="logo-google"></ion-icon></div>
         </div>
